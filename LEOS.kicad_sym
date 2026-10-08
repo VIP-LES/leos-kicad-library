@@ -2777,28 +2777,30 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "U"
-			(at 27.94 10.16 0)
+		(property "Reference" "U6"
+			(at 2.032 11.176 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "MCP41100T-I/SN"
-			(at 27.94 7.62 0)
+			(at 2.032 8.636 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "SOIC8-N_MC_MCH"
-			(at 0 0 0)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 0 -22.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -2810,7 +2812,7 @@
 			)
 		)
 		(property "Datasheet" "MCP41100T-I/SN"
-			(at 0 0 0)
+			(at 0 -29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -2821,11 +2823,54 @@
 				)
 			)
 		)
-		(property "Description" "IC DIG POT 100K 8-SOIC"
-			(at 0 0 0)
+		(property "Description" ""
+			(at -26.67 9.525 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "MCP41100T-I/SNCT-ND"
+			(at 0 -20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MCP41100T-I/SN"
+			(at 0 -24.765 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Microchip Technology"
+			(at 0 -26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2854,59 +2899,22 @@
 				)
 			)
 		)
-		(symbol "MCP41100T-I_SN_0_1"
-			(polyline
-				(pts
-					(xy 7.62 5.08) (xy 7.62 -12.7)
-				)
+		(symbol "MCP41100T-I_SN_1_1"
+			(rectangle
+				(start -10.16 6.35)
+				(end 10.16 -6.35)
 				(stroke
-					(width 0.127)
-					(type default)
+					(width 0)
+					(type solid)
 				)
 				(fill
-					(type none)
+					(type background)
 				)
 			)
-			(polyline
-				(pts
-					(xy 7.62 -12.7) (xy 48.26 -12.7)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 48.26 5.08) (xy 7.62 5.08)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 48.26 -12.7) (xy 48.26 5.08)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(pin unspecified line
-				(at 0 0 0)
-				(length 7.62)
-				(name "*CS"
+			(pin input line
+				(at -13.97 2.54 0)
+				(length 3.81)
+				(name "~{CS}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2921,9 +2929,9 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 0 -2.54 0)
-				(length 7.62)
+			(pin input line
+				(at -13.97 -2.54 0)
+				(length 3.81)
 				(name "SCK"
 					(effects
 						(font
@@ -2939,9 +2947,9 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 0 -5.08 0)
-				(length 7.62)
+			(pin input line
+				(at -13.97 0 0)
+				(length 3.81)
 				(name "SI"
 					(effects
 						(font
@@ -2957,9 +2965,9 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 0 -7.62 0)
-				(length 7.62)
+			(pin power_in line
+				(at 0 -10.16 90)
+				(length 3.81)
 				(name "VSS"
 					(effects
 						(font
@@ -2975,9 +2983,9 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 55.88 -7.62 180)
-				(length 7.62)
+			(pin passive line
+				(at 13.97 -2.54 180)
+				(length 3.81)
 				(name "PA0"
 					(effects
 						(font
@@ -2993,9 +3001,9 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 55.88 -5.08 180)
-				(length 7.62)
+			(pin passive line
+				(at 13.97 0 180)
+				(length 3.81)
 				(name "PW0"
 					(effects
 						(font
@@ -3011,9 +3019,9 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 55.88 -2.54 180)
-				(length 7.62)
+			(pin passive line
+				(at 13.97 2.54 180)
+				(length 3.81)
 				(name "PB0"
 					(effects
 						(font
@@ -3029,9 +3037,9 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 55.88 0 180)
-				(length 7.62)
+			(pin power_in line
+				(at 0 10.16 270)
+				(length 3.81)
 				(name "VDD"
 					(effects
 						(font
@@ -4752,8 +4760,8 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "U"
-			(at 20.32 10.16 0)
+		(property "Reference" "U4"
+			(at 0 22.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4763,7 +4771,7 @@
 			)
 		)
 		(property "Value" "TPS16630PWPR"
-			(at 20.32 7.62 0)
+			(at 0 20.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4772,8 +4780,8 @@
 				)
 			)
 		)
-		(property "Footprint" "HTSSOP20_PWP_TEX"
-			(at 0 0 0)
+		(property "Footprint" "LEOS:HTSSOP20_PWP_TEX"
+			(at 0 -36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -4785,7 +4793,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/gpn/tps1663"
-			(at 19.304 13.208 0)
+			(at 0 -39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -4796,11 +4804,54 @@
 				)
 			)
 		)
-		(property "Description" "IC ELECTRONIC FUSE 2% 20HTSSOP"
-			(at 0 0 0)
+		(property "Description" ""
+			(at -20.32 12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "296-TPS16630PWPTCT-ND"
+			(at 0 -42.545 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TPS16630PWPT"
+			(at 0 -47.625 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 0 -45.085 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4829,58 +4880,21 @@
 				)
 			)
 		)
-		(symbol "TPS16630PWPR_0_1"
-			(polyline
-				(pts
-					(xy 7.62 5.08) (xy 7.62 -30.48)
-				)
+		(symbol "TPS16630PWPR_1_1"
+			(rectangle
+				(start -12.7 17.78)
+				(end 12.7 -17.78)
 				(stroke
-					(width 0.127)
-					(type default)
+					(width 0)
+					(type solid)
 				)
 				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -30.48) (xy 33.02 -30.48)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 33.02 5.08) (xy 7.62 5.08)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 33.02 -30.48) (xy 33.02 5.08)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
+					(type background)
 				)
 			)
 			(pin power_in line
-				(at 0 0 0)
-				(length 7.62)
+				(at -16.51 12.7 0)
+				(length 3.81)
 				(name "IN"
 					(effects
 						(font
@@ -4896,9 +4910,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 0 -2.54 0)
-				(length 7.62)
+			(pin passive line
+				(at -16.51 12.7 0)
+				(length 3.81)
+				(hide yes)
 				(name "IN"
 					(effects
 						(font
@@ -4914,9 +4929,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 0 -5.08 0)
-				(length 7.62)
+			(pin passive line
+				(at -16.51 12.7 0)
+				(length 3.81)
+				(hide yes)
 				(name "IN"
 					(effects
 						(font
@@ -4933,8 +4949,9 @@
 				)
 			)
 			(pin no_connect line
-				(at 0 -7.62 0)
-				(length 7.62)
+				(at -15.875 5.715 0)
+				(length 3.81)
+				(hide yes)
 				(name "NC"
 					(effects
 						(font
@@ -4951,8 +4968,9 @@
 				)
 			)
 			(pin no_connect line
-				(at 0 -10.16 0)
-				(length 7.62)
+				(at -15.875 3.175 0)
+				(length 3.81)
+				(hide yes)
 				(name "NC"
 					(effects
 						(font
@@ -4969,8 +4987,8 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -12.7 0)
-				(length 7.62)
+				(at -16.51 10.16 0)
+				(length 3.81)
 				(name "P_IN"
 					(effects
 						(font
@@ -4987,8 +5005,8 @@
 				)
 			)
 			(pin input line
-				(at 0 -15.24 0)
-				(length 7.62)
+				(at -16.51 -2.54 0)
+				(length 3.81)
 				(name "UVLO"
 					(effects
 						(font
@@ -5005,8 +5023,8 @@
 				)
 			)
 			(pin input line
-				(at 0 -17.78 0)
-				(length 7.62)
+				(at -16.51 -7.62 0)
+				(length 3.81)
 				(name "OVP"
 					(effects
 						(font
@@ -5022,9 +5040,9 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 0 -20.32 0)
-				(length 7.62)
+			(pin power_in line
+				(at 0 -21.59 90)
+				(length 3.81)
 				(name "GND"
 					(effects
 						(font
@@ -5041,8 +5059,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 0 -22.86 0)
-				(length 7.62)
+				(at -16.51 -12.7 0)
+				(length 3.81)
 				(name "DVDT"
 					(effects
 						(font
@@ -5059,8 +5077,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 40.64 -25.4 180)
-				(length 7.62)
+				(at 16.51 -12.7 180)
+				(length 3.81)
 				(name "ILIM"
 					(effects
 						(font
@@ -5077,8 +5095,8 @@
 				)
 			)
 			(pin input line
-				(at 40.64 -22.86 180)
-				(length 7.62)
+				(at 16.51 -10.16 180)
+				(length 3.81)
 				(name "MODE"
 					(effects
 						(font
@@ -5095,9 +5113,9 @@
 				)
 			)
 			(pin input line
-				(at 40.64 -20.32 180)
-				(length 7.62)
-				(name "*SHDN"
+				(at 16.51 -7.62 180)
+				(length 3.81)
+				(name "~{SHDN}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5113,8 +5131,8 @@
 				)
 			)
 			(pin output line
-				(at 40.64 -17.78 180)
-				(length 7.62)
+				(at 16.51 -5.08 180)
+				(length 3.81)
 				(name "IMON"
 					(effects
 						(font
@@ -5131,9 +5149,9 @@
 				)
 			)
 			(pin output line
-				(at 40.64 -15.24 180)
-				(length 7.62)
-				(name "*FLT"
+				(at 16.51 -2.54 180)
+				(length 3.81)
+				(name "~{FLT}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5149,8 +5167,8 @@
 				)
 			)
 			(pin output line
-				(at 40.64 -12.7 180)
-				(length 7.62)
+				(at 16.51 0 180)
+				(length 3.81)
 				(name "PGOOD"
 					(effects
 						(font
@@ -5167,8 +5185,9 @@
 				)
 			)
 			(pin no_connect line
-				(at 40.64 -10.16 180)
-				(length 7.62)
+				(at -15.875 0.635 0)
+				(length 3.81)
+				(hide yes)
 				(name "NC"
 					(effects
 						(font
@@ -5184,9 +5203,9 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 40.64 -7.62 180)
-				(length 7.62)
+			(pin power_out line
+				(at 16.51 12.7 180)
+				(length 3.81)
 				(name "OUT"
 					(effects
 						(font
@@ -5202,9 +5221,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 40.64 -5.08 180)
-				(length 7.62)
+			(pin passive line
+				(at 16.51 12.7 180)
+				(length 3.81)
+				(hide yes)
 				(name "OUT"
 					(effects
 						(font
@@ -5220,9 +5240,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 40.64 -2.54 180)
-				(length 7.62)
+			(pin passive line
+				(at 16.51 12.7 180)
+				(length 3.81)
+				(hide yes)
 				(name "OUT"
 					(effects
 						(font
@@ -5238,9 +5259,10 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 40.64 0 180)
-				(length 7.62)
+			(pin passive line
+				(at 0 -21.59 90)
+				(length 3.81)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -6038,8 +6060,8 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "U"
-			(at 22.86 10.16 0)
+		(property "Reference" "U3"
+			(at 0 12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6049,7 +6071,7 @@
 			)
 		)
 		(property "Value" "TPS54540BDDA"
-			(at 22.86 7.62 0)
+			(at 0 10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6058,8 +6080,8 @@
 				)
 			)
 		)
-		(property "Footprint" "SO-POWERPAD8_DDA_TEX"
-			(at 0 0 0)
+		(property "Footprint" "LEOS:SO-POWERPAD8_DDA_TEX"
+			(at 0.635 -27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -6071,7 +6093,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/gpn/tps54540b"
-			(at 0 0 0)
+			(at 0.635 -24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -6082,11 +6104,54 @@
 				)
 			)
 		)
-		(property "Description" "Buck, Split Rail Switching Regulator IC Positive Adjustable 0.8V 1 Output 5A 8-PowerSOIC (0.154\", 3.90mm Width)"
-			(at 0 0 0)
+		(property "Description" ""
+			(at -22.86 6.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "296-TPS54540BDDA-ND"
+			(at 0.635 -36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TPS54540BDDA"
+			(at 0.635 -33.655 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 0.635 -30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6115,58 +6180,21 @@
 				)
 			)
 		)
-		(symbol "TPS54540BDDA_0_1"
-			(polyline
-				(pts
-					(xy 7.62 5.08) (xy 7.62 -15.24)
-				)
+		(symbol "TPS54540BDDA_1_1"
+			(rectangle
+				(start -15.24 7.62)
+				(end 15.24 -7.62)
 				(stroke
-					(width 0.127)
-					(type default)
+					(width 0)
+					(type solid)
 				)
 				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -15.24) (xy 38.1 -15.24)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 38.1 5.08) (xy 7.62 5.08)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 38.1 -15.24) (xy 38.1 5.08)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
+					(type background)
 				)
 			)
 			(pin output line
-				(at 0 0 0)
-				(length 7.62)
+				(at 19.05 3.81 180)
+				(length 3.81)
 				(name "BOOT"
 					(effects
 						(font
@@ -6183,8 +6211,8 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -2.54 0)
-				(length 7.62)
+				(at -19.05 3.81 0)
+				(length 3.81)
 				(name "VIN"
 					(effects
 						(font
@@ -6201,8 +6229,8 @@
 				)
 			)
 			(pin input line
-				(at 0 -5.08 0)
-				(length 7.62)
+				(at -19.05 -1.27 0)
+				(length 3.81)
 				(name "EN"
 					(effects
 						(font
@@ -6219,8 +6247,8 @@
 				)
 			)
 			(pin input line
-				(at 0 -7.62 0)
-				(length 7.62)
+				(at -19.05 -3.81 0)
+				(length 3.81)
 				(name "RT/CLK"
 					(effects
 						(font
@@ -6237,8 +6265,8 @@
 				)
 			)
 			(pin input line
-				(at 45.72 -10.16 180)
-				(length 7.62)
+				(at 19.05 -3.81 180)
+				(length 3.81)
 				(name "FB"
 					(effects
 						(font
@@ -6255,8 +6283,8 @@
 				)
 			)
 			(pin output line
-				(at 45.72 -7.62 180)
-				(length 7.62)
+				(at 19.05 -1.27 180)
+				(length 3.81)
 				(name "COMP"
 					(effects
 						(font
@@ -6272,9 +6300,9 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 45.72 -5.08 180)
-				(length 7.62)
+			(pin power_in line
+				(at 0 -11.43 90)
+				(length 3.81)
 				(name "GND"
 					(effects
 						(font
@@ -6291,8 +6319,8 @@
 				)
 			)
 			(pin input line
-				(at 45.72 -2.54 180)
-				(length 7.62)
+				(at 19.05 1.27 180)
+				(length 3.81)
 				(name "SW"
 					(effects
 						(font
@@ -6308,9 +6336,10 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 45.72 0 180)
-				(length 7.62)
+			(pin passive line
+				(at 0 -11.43 90)
+				(length 3.81)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
